@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MedicCalc — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #f5f6f8;
+      --surface:   #ffffff;
+      --border:    #e2e5ea;
+      --text:      #1a1d23;
+      --muted:     #6b7280;
+      --accent:    #4a7aaa;
+      --mono:      'DM Mono', monospace;
+      --sans:      'DM Sans', sans-serif;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 48px 24px 0;
+      max-width: 560px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .wordmark {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 32px;
+    }
+
+    .star { width: 32px; height: 32px; flex-shrink: 0; }
+
+    .wordmark-text {
+      font-family: var(--mono);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      color: var(--text);
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 500;
+      line-height: 1.25;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    main {
+      flex: 1;
+      max-width: 560px;
+      margin: 0 auto;
+      padding: 0 24px 64px;
+      width: 100%;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      margin-bottom: 16px;
+    }
+
+    .card-label {
+      font-family: var(--mono);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 14px;
+    }
+
+    .card p:last-child { margin-bottom: 0; }
+
+    .card strong { color: var(--text); font-weight: 500; }
+
+    .card a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    .card a:hover { border-color: var(--accent); }
+
+    .updated {
+      font-family: var(--mono);
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.78rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      font-family: var(--mono);
+    }
+
+    @media (max-width: 480px) {
+      header { padding-top: 36px; }
+      .card  { padding: 24px; }
+      h1     { font-size: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wordmark">
+      <svg class="star" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <rect x="28" y="4"  width="8" height="56" rx="4" fill="#4a7aaa"/>
+        <rect x="28" y="4"  width="8" height="56" rx="4" fill="#4a7aaa" transform="rotate(60 32 32)"/>
+        <rect x="28" y="4"  width="8" height="56" rx="4" fill="#4a7aaa" transform="rotate(120 32 32)"/>
+        <rect x="31" y="18" width="2" height="28" rx="1" fill="white" opacity="0.9"/>
+        <ellipse cx="32" cy="17" rx="2" ry="1.5" fill="white" opacity="0.9"/>
+        <path d="M32 22 C28 25 28 30 32 33" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.85"/>
+        <path d="M32 33 C36 36 36 40 32 43" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.85"/>
+      </svg>
+      <span class="wordmark-text">MedicCalc</span>
+    </div>
+
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">
+      The short version: MedicCalc doesn't collect, store,
+      or transmit any data. Everything stays on your device.
+    </p>
+  </header>
+
+  <main>
+
+    <p class="updated">Last updated: April 2026</p>
+
+    <div class="card">
+      <div class="card-label">Data collection</div>
+      <p>
+        <strong>MedicCalc collects no data.</strong> The app does not collect,
+        store, transmit, or share any personal information, usage data,
+        or any other information about you or your device.
+      </p>
+      <p>
+        All values you enter — weight, fluid targets, infusion details —
+        are stored locally on your device using iOS standard storage.
+        They never leave your device.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Third parties</div>
+      <p>
+        MedicCalc contains no third-party analytics, advertising networks,
+        crash reporting tools, or tracking SDKs of any kind.
+      </p>
+      <p>
+        No data is shared with any third party because no data is collected
+        in the first place.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Network access</div>
+      <p>
+        MedicCalc does not require or use a network connection.
+        The app functions entirely offline. No outbound requests
+        are made at any time.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Children's privacy</div>
+      <p>
+        MedicCalc does not collect any information from anyone,
+        including children under the age of 13.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Changes to this policy</div>
+      <p>
+        If this policy changes in a future update, the updated version
+        will be posted at this URL with a revised date at the top.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Contact</div>
+      <p>
+        Questions about this policy can be directed to
+        <a href="mailto:dev@taekang.org">dev@taekang.org</a>.
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Tae Kang &nbsp;·&nbsp; MedicCalc
+  </footer>
+
+</body>
+</html>
